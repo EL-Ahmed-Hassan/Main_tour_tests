@@ -576,3 +576,24 @@
 #     if input("Do you want to continue: (y) or (n): ") != "y":
 #         print("Exiting the Tax Calculator..... Goodbye!")
 #         break # final edite 5/30/2026 12:40 pm
+
+# check if email is valid
+import time
+name = input("Enter your name: ")
+email= input("Enter your email: ")
+def is_valid_email(email):
+    """تقوم الوظيفة بالتحقق من صحة البريد الإلكتروني المدخل
+    و تعيد True إذا كان البريد الإلكتروني صالحًا، و False إذا كان غير صالح
+    """
+    if "@" and "." in email:
+        return True
+    return False
+
+if is_valid_email(email):
+    print("Checking the email validity...")
+    time.sleep(2) # simulate checking the email validity
+    print("The email is valid.")
+else:
+    print("Checking the email validity...")
+    time.sleep(2) # simulate checking the email validity
+    print("The email is not valid.")
